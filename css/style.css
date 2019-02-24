@@ -1,65 +1,86 @@
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
 
-body{
-    background-image: url(/assets/images/milkyway.jpg)
+#toph1{
+	text-align: center;
+	padding: 2.5% 3.5%;
+	
+}
 
+h1 {
+	font-size: 32;
 }
-div{
-	background-color: gray;
-	margin: 10px;
-	width: 25%
+
+.center-content {
+	padding: 3.5% 7%;
+	text-align: center;
+	font-size: 27px;
 }
-div{
-	border: solid 2px antiquewhite;
-	padding: 10px;
+
+#blue {
+  color: blue;
 }
-h1, h3, span{
-	font-weight: bold;
+
+#green {
+  color: green;
+}
+
+#red {
+  color: red;
+}
+
+#yellow {
+   color: yellow;
+}
+
+.gamepad {
+	padding: 2% 2%;
 	text-align: center;
 }
-h1{
-	font-size: 30pt;
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
-ol{
-	list-style: decimal inside; 
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
-ul {
-	list-style: disc inside;
-	text-indent: 20px;
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
-/* Specfic Elements*/
-div.header, div.gems{
-	background-color: #454555;
-}
-div.header, div.instructions{
-	width: 50%;
-}
-/* Classes */
-.numberToMatch, .winsAndLosses{
-	float: left;
-	width: 15%;
-	height: 60px;
-}
-.userTotal{
-	width: 15%;
-	height: 60px;
-}
-.gems{
-	clear: both;
-}
-.gemImage{
-	height: 60px;
-	margin: 10px;
-}
-/* IDs */
-#blue{
-	color: #3092c7;
-}
-#green{
-	color: #00aa59;
-}
-#red{
-	color: #ec4b5f;
-}
-#yellow{
-	color: #ffc225;
-}
+
+
+
